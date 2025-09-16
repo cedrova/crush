@@ -1,10 +1,19 @@
 #pragma once
 #include <string>
 
-// Reuse the CLI Algorithm enum if needed; compressor currently implements Huffman only.
-enum class CompressorAlgo { Huffman = 0 };
+enum class Algorithm { Huffman, LZ77, BWT, Arithmetic, None };
 
-struct Compressor {
-    static void compress(const std::string& inFile, const std::string& outFile);
-    static void decompress(const std::string& inFile, const std::string& outFile);
+class Compressor {
+public:
+    void compress(const std::string &input,
+                  const std::string &output,
+                  Algorithm algo,
+                  int level = 5,
+                  int threads = 1);
+
+    void decompress(const std::string &input,
+                    const std::string &output);
+
+    void benchmark(const std::string &input,
+                   Algorithm algo);
 };

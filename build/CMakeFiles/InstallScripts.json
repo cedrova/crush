@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/WarLock/crush/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\WarLock\crush\build\CMakeFiles\b94446666bcde62c9f3f06debe86547f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{169DED4B-2F9F-3D00-A2B2-E421E0C747D1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

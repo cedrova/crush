@@ -1,0 +1,10 @@
+^C:\WARLOCK\CRUSH\BUILD\CMAKEFILES\B94446666BCDE62C9F3F06DEBE86547F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/WarLock/crush -BC:/WarLock/crush/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/WarLock/crush/build/crush.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
